@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   
-  #has_many :posts
+  has_many :posts
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
